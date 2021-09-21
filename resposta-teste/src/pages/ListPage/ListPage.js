@@ -1,5 +1,6 @@
+import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
-import { Container, TitleContainer, Title, Footer } from "../SignUpPage/styledSignUpPage"
+import { Container, TitleContainer, Title } from "../SignUpPage/styledSignUpPage"
 import { ClientName, ListContainer, TableContainer } from "./styledListPage"
 
 
@@ -31,9 +32,7 @@ const ListPage = () => {
                 </TableContainer>
             </Container>
 
-            <Footer>
-                <p>Ivan Gomes - 2021</p>
-            </Footer>
+            <Footer />
 
         </div>
     )

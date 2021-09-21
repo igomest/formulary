@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 
-export const Container = styled.body`
+export const Container = styled.div`
    display: flex;
    height: 100%;
    flex-direction: column;
@@ -27,6 +27,9 @@ export const Title = styled.section`
        color:  #445566;
    }
 `
+export const Form = styled.form`
+`
+
 export const InputContainer = styled.section`
    display: flex;
    flex-direction: column;
@@ -34,7 +37,6 @@ export const InputContainer = styled.section`
    height: 55vh;
    margin-top: 70px;
    align-items: center;
-   border: 1px solid black;
 `
 
 export const ContentData = styled.p`
@@ -63,16 +65,18 @@ export const AdressContainer = styled.section`
    width: 90%;
    height: 35vh;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   /* border: 1px solid black; */
 `
 
 export const UserAdress = styled.section`
    display: flex;
-   width: 45%;
+   width: 50%;
    height: 22vh;
    flex-direction: column;
    margin-top: 20px;
    margin-left: 10px;
+   /* border: 1px solid black; */
 
 
    input {
@@ -82,6 +86,15 @@ export const UserAdress = styled.section`
        background-color:  #EFF4F9;
        border: none;
        border-radius: 5px;
+   }
+
+   select {
+      background-color:  #EFF4F9;
+       width: 85%;
+       height: 5vh;
+       border-radius: 5px;
+       border: none;
+       margin-left: 10px;
    }
 `
 export const ContentAdress = styled.p`
@@ -93,9 +106,9 @@ export const PaymentContainer = styled.section`
    display: flex;
    width: 35vw;
    height: 55vh;
-   margin: 20px;
-   border: 1px solid black;
+   margin-top: 20px;
    flex-direction: column;
+   
 `
 
 export const Payment = styled.p`
@@ -107,7 +120,6 @@ export const CardInput = styled.section`
    display: flex;
    width: 50%;
    height: 5vh;
-   border: 1px solid black;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
@@ -125,7 +137,6 @@ export const ItemsContainer = styled.div`
     height: 30vh;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
     margin: 20px;
 `
 
@@ -133,9 +144,7 @@ export const CardContainer = styled.section`
    display: flex;
    width: 50%;
    height: 22vh;
-   border: 1px solid black;
    flex-direction: column;
-   /* margin-top: 20px; */
    margin-left: 30px;
 
 
@@ -150,7 +159,6 @@ export const CardContainer = styled.section`
 `
 export const SelectContainer = styled.section`
     display: flex;
-    border: 1px solid black;
     width: 100%;
     height: 6vh;
     justify-content: space-evenly;
@@ -168,10 +176,10 @@ export const SelectContainer = styled.section`
 `
 export const MatriculationContainer = styled.section`
    display: flex;
-   border: 1px solid black;
    flex-direction: column;
    height: 17vh;
    width: 20vw;
+   margin-top: 10px;
    margin-right: 15%;
 
    p {
@@ -186,18 +194,6 @@ export const MatriculationContainer = styled.section`
        border: none;
        border-radius: 5px;
        color: white;
-   }
-`
-
-export const Footer = styled.footer`
-   display: flex;
-   width: 100%;
-   height: 12vh;
-   background-color: #1188EE;
-   align-items: center;
-
-   p {
-       color: white;
-       padding: 20px;
+       cursor: pointer;
    }
 `
