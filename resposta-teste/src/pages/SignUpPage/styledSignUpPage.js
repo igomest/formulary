@@ -15,16 +15,20 @@ export const Container = styled.body`
 `
 export const ButtonContainer = styled.div`
   display: flex;
-  border: 1px solid tomato;
   width: 10vw;
-  height: 5vh;
-  justify-content: space-between;
+  height: 6vh;
+  justify-content: space-evenly;
   align-items: center;
   margin-right: 70px;
 
   button {
-      width: 40%;
-      height: 50%;
+      width: 80px;
+      height: 34px;
+      border: none;
+      color: white;
+      background-color: #17222D;
+      cursor: pointer;
+      font-size: 18px;
   }
 `
 export const TitleContainer = styled.section`
