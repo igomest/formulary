@@ -1,13 +1,11 @@
 import {
     AdressContainer,
-    ButtonContainer,
     CardContainer,
     CardInput,
     Container,
     ContentAdress,
     ContentData,
     Footer,
-    Header,
     InputContainer,
     ItemsContainer,
     MatriculationContainer,
@@ -20,18 +18,12 @@ import {
     UserData,
 } from "./styledSignUpPage"
 
-
+import Header from "../../components/Header/Header"
 
 const SignUpPage = () => {
     return (
         <div>
-            <Header>
-                <ButtonContainer>
-                    <button>Lista</button>
-
-                    <button>Cadastro</button>
-                </ButtonContainer>
-            </Header>
+            <Header />
 
             <Container>
                 <TitleContainer>

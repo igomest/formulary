@@ -1,4 +1,5 @@
-import { ButtonContainer, Header, Container, TitleContainer, Title, Footer } from "../SignUpPage/styledSignUpPage"
+import Header from "../../components/Header/Header"
+import { Container, TitleContainer, Title, Footer } from "../SignUpPage/styledSignUpPage"
 import { ClientName, ListContainer, TableContainer } from "./styledListPage"
 
 
@@ -6,13 +7,7 @@ import { ClientName, ListContainer, TableContainer } from "./styledListPage"
 const ListPage = () => {
     return (
         <div>
-            <Header>
-                <ButtonContainer>
-                    <button>Lista</button>
-
-                    <button>Cadastro</button>
-                </ButtonContainer>
-            </Header>
+            <Header />
 
             <Container>
                 <TitleContainer>
