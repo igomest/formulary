@@ -45,6 +45,7 @@ export const ClientName = styled.section`
     border-radius: 5px;
     border: none;
     margin-left: 28px;
+    padding-left: 20px;
   }
 `
 export const TableContainer = styled.section`

@@ -263,3 +263,8 @@ export const MatriculationContainer = styled.section`
        }
    }
 `
+export const Information = styled.p`
+   margin-left: 10px;
+   font-size: 14px;
+   color: #445566;
+`

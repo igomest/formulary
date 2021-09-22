@@ -5,6 +5,7 @@ import {
     ContentAdress,
     ContentData,
     Form,
+    Information,
     InputContainer,
     ItemsContainer,
     MatriculationContainer,
@@ -77,7 +78,7 @@ const SignUpForm = () => {
                             type={"number"}
                             name={"cpf"}
                             onChange={onChange}
-                            pattern={"^.{11,}"}
+                            max={11}
                             title={"O cpf deve ter no mínimo 11 números"}
                             required
                         />
@@ -101,7 +102,7 @@ const SignUpForm = () => {
                                 type={"number"}
                                 name={"cep"}
                                 onChange={onChange}
-                                pattern={"^.{8,}"}
+                                max={8}
                                 title={"O cpf deve ter no mínimo 8 números"}
                                 required
                             />
@@ -111,15 +112,15 @@ const SignUpForm = () => {
                             <ContentAdress>Estado</ContentAdress>
                             <select value={form.state} onChange={onChange} name={"state"} required>
                                 <option>Selecione o estado</option>
-                                <option>Selecione o estado</option>
-                                <option>Selecione o estado</option>
+                                <option>MG</option>
+                                <option>SP</option>
                             </select>
 
                             <ContentAdress>Cidade</ContentAdress>
                             <select value={form.city} onChange={onChange} name={"city"} required>
-                                <option>Mês</option>
-                                <option>Mês</option>
-                                <option>Mês</option>
+                                <option>Cidade</option>
+                                <option>Belo Horizonte</option>
+                                <option>São Paulo</option>
                             </select>
                         </UserAdress>
                     </AdressContainer>
@@ -158,7 +159,7 @@ const SignUpForm = () => {
                                 type={"number"}
                                 name={"cardNumber"}
                                 onChange={onChange}
-                                pattern={"^.{16,}"}
+                                max={16}
                                 title={"O cartão deve ter no mínimo 16 dígitos"}
                                 required
                             />
@@ -169,14 +170,32 @@ const SignUpForm = () => {
                             <SelectContainer>
                                 <select value={form.dateExp} onChange={onChange} name={"dateExp"} required>
                                     <option>Mês</option>
-                                    <option>Mês</option>
-                                    <option>Mês</option>
+                                    <option>Janeiro</option>
+                                    <option>Fevereiro</option>
+                                    <option>Março</option>
+                                    <option>Abril</option>
+                                    <option>Maio</option>
+                                    <option>Junho</option>
+                                    <option>Julho</option>
+                                    <option>Agosto</option>
+                                    <option>Setembro</option>
+                                    <option>Outubro</option>
+                                    <option>Novembro</option>
+                                    <option>Dezembro</option>
                                 </select>
 
                                 <select value={form.yearExp} onChange={onChange} name={"yearExp"} required>
                                     <option>Ano</option>
-                                    <option>Ano</option>
-                                    <option>Ano</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
                                 </select>
                             </SelectContainer>
 
@@ -186,7 +205,7 @@ const SignUpForm = () => {
                                 onChange={onChange}
                                 type={"number"}
                                 value={form.securityName}
-                                pattern={"^.{3,}"}
+                                max={3}
                                 title={"O código de segurança deve ter no mínimo 3 caracteres"}
                                 name={"securityName"}
                                 required
@@ -200,7 +219,7 @@ const SignUpForm = () => {
                 <MatriculationContainer>
                     <p>Seu cartão será debitado em R$49,00</p>
                     <button type={"submit"}>REALIZAR MATRÍCULA</button>
-                    <p>Informações seguras e criptografadas</p>
+                    <Information>Informações seguras e criptografadas</Information>
                 </MatriculationContainer>
             </Form>
         </>

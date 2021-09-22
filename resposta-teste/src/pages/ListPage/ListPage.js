@@ -3,9 +3,37 @@ import Header from "../../components/Header/Header"
 import { Container, TitleContainer, Title } from "../SignUpPage/styledSignUpPage"
 import { ClientName, ListContainer, ListLine } from "./styledListPage"
 
+const userData = [
+    {
+        cpf: 22222222210,
+        name: "Ivan",
+        email: "ivan@gmail.com",
+        date: "21/09/2021"
+    },
+    {
+        cpf: 22235622102,
+        name: "Ana",
+        email: "ana@gmail.com",
+        date: "19/09/2021"
+    },
+    {
+        cpf: 25975322210,
+        name: "Felipe",
+        email: "felipe@outlook.com",
+        date: "18/09/2021"
+    },
+    {
+        cpf: 25996525210,
+        name: "Amanda",
+        email: "amanda@outlook.com",
+        date: "17/09/2021"
+    }
+]
 
 
 const ListPage = () => {
+
+
     return (
         <div>
             <Header />
@@ -33,39 +61,20 @@ const ListPage = () => {
                         <tr>
                             <th>Nome</th>
                             <th>Email</th>
-                            <th>Cpf</th>
-                            <th>Cirado em</th>
+                            <th>CPF</th>
+                            <th>Criado em:</th>
                         </tr>
                     </thead>
-
-
+                    
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td>ivan@email.com</td>
-                            <td>1/5/2021</td>
-                            <td>
-                                <p>Unpaid</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Sim</td>
-                            <td>Sonic</td>
-                            <td>1/4/2021</td>
-                            <td>
-                                <p>Paid</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Highlander</td>
-                            <td>12/18/2020</td>
-                            <td>
-                                <p>Paid</p>
-                            </td>
-                            <td>$1152.35</td>
-                        </tr>
+                        {userData.map((user) => (
+                            <tr>
+                                <td>{user.name}</td>
+                                <td>{user.email}</td>
+                                <td>{user.cpf}</td>
+                                <td>{user.date}</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </Container>
