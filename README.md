@@ -8,8 +8,7 @@
 ### Configurando ambiente
 Primeira etapa
 
-    NodeJS guia de instalação
-    ReactJs
+    NodeJS guia de instalação -> https://nodejs.org/en/download/package-manager/
 
 ### Segunda etapa
 
@@ -17,8 +16,8 @@ Primeira etapa
 
     Baixando o projeto
 
-$ git clone git@github.com:ivangomestr/resposta-do-teste.git
-$ cd resposta-do-teste
+- $ git clone git@github.com:ivangomestr/resposta-do-teste.git
+- $ cd resposta-do-teste
 
 ### Terceira etapa
 
