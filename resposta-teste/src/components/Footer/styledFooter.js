@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
    background-color: #1188EE;
    align-items: center;
    position: absolute;
-   margin-top: 10%;
+   margin-top: 20%;
 
    p {
        color: white;

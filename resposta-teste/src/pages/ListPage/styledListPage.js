@@ -1,6 +1,42 @@
 import styled from "styled-components"
 
 
+export const Container = styled.div`
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   align-items: center;
+
+   table {
+      border-collapse: collapse;
+      background-color: white;
+      width: 30vw;
+      min-height: 10vh;
+      text-align: left;
+      overflow: hidden;
+      margin: 40px;
+      margin-left: 5%;
+   } 
+
+   thead {
+      border: 2px solid #ccd9e5;
+  }
+
+  th {
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border: 2px solid #ccd9e5;
+  }
+
+  td {
+    padding: 0.1rem 2rem;
+    border: 2px solid #ccd9e5;
+  }
+`
+
 export const ListContainer = styled.section`
    display: flex;
    width: 20vw;

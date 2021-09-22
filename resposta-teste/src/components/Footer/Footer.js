@@ -1,7 +1,6 @@
 import { FooterContainer } from "./styledFooter"
 
 
-
 const Footer = () => {
     return (
         <FooterContainer>

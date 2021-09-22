@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
-import { Container, TitleContainer, Title } from "../SignUpPage/styledSignUpPage"
-import { ClientName, ListContainer, ListLine } from "./styledListPage"
+import { TitleContainer, Title } from "../SignUpPage/styledSignUpPage"
+import { ClientName, ListContainer, ListLine, Container } from "./styledListPage"
 
 const userData = [
     {
@@ -35,7 +35,7 @@ const ListPage = () => {
 
 
     return (
-        <div>
+        <>
             <Header />
 
             <Container>
@@ -68,7 +68,7 @@ const ListPage = () => {
                     
                     <tbody>
                         {userData.map((user) => (
-                            <tr>
+                            <tr key={user.cpf}>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{user.cpf}</td>
@@ -81,7 +81,7 @@ const ListPage = () => {
 
             <Footer />
 
-        </div>
+        </>
     )
 }
 

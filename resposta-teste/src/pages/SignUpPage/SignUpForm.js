@@ -17,12 +17,11 @@ import {
     UserData,
 } from "./styledSignUpPage"
 import useForm from "../../hooks/useForm"
-import { useHistory } from "react-router"
-import { goToListPage } from "../../router/coordinator"
+
 
 const SignUpForm = () => {
 
-    const [form, onChange] = useForm({
+    const [form, onChange, changeThePage] = useForm({
         name: "",
         email: "",
         cpf: "",
@@ -39,13 +38,10 @@ const SignUpForm = () => {
         securityCode: ""
     })
 
-
-    const history = useHistory()
-
-
     const onSubmitForm = (event) => {
         event.preventDefault()
         console.log("Formulário enviado!", form)
+        changeThePage()
     }
 
     return (
@@ -78,8 +74,6 @@ const SignUpForm = () => {
                             type={"number"}
                             name={"cpf"}
                             onChange={onChange}
-                            max={11}
-                            title={"O cpf deve ter no mínimo 11 números"}
                             required
                         />
                     </UserData>
@@ -102,8 +96,6 @@ const SignUpForm = () => {
                                 type={"number"}
                                 name={"cep"}
                                 onChange={onChange}
-                                max={8}
-                                title={"O cpf deve ter no mínimo 8 números"}
                                 required
                             />
                         </UserAdress>
@@ -159,8 +151,6 @@ const SignUpForm = () => {
                                 type={"number"}
                                 name={"cardNumber"}
                                 onChange={onChange}
-                                max={16}
-                                title={"O cartão deve ter no mínimo 16 dígitos"}
                                 required
                             />
                         </CardContainer>
@@ -205,8 +195,6 @@ const SignUpForm = () => {
                                 onChange={onChange}
                                 type={"number"}
                                 value={form.securityName}
-                                max={3}
-                                title={"O código de segurança deve ter no mínimo 3 caracteres"}
                                 name={"securityName"}
                                 required
                             />

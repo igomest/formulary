@@ -1,6 +1,5 @@
 import Router from "./router/Router"
 import { createGlobalStyle } from 'styled-components'
-import { getDefaultNormalizer } from "@testing-library/dom"
 
 const GlobalStyle = createGlobalStyle`
   body {
