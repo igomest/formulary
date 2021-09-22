@@ -10,6 +10,7 @@ import {
     MatriculationContainer,
     Payment,
     PaymentContainer,
+    Row,
     SelectContainer,
     UserAdress,
     UserData,
@@ -20,7 +21,7 @@ import { goToListPage } from "../../router/coordinator"
 
 const SignUpForm = () => {
 
-    const [ form, onChange ] = useForm({
+    const [form, onChange] = useForm({
         name: "",
         email: "",
         cpf: "",
@@ -125,8 +126,9 @@ const SignUpForm = () => {
                 </InputContainer>
 
                 <PaymentContainer>
-                    <Payment>Formas de Pagamento</Payment>
-                    <hr />
+                    <Payment>Forma de Pagamento</Payment>
+                    <Row />
+
                     <CardInput>
                         <input type="radio" required value={form.credit} onChange={onChange} name={"credit"} />
                         <label>Cartão de Crédito</label>
@@ -144,8 +146,8 @@ const SignUpForm = () => {
                                 onChange={onChange}
                                 value={form.cardName}
                                 name={"cardName"}
-                                pattern={"^.{3,}"}
-                                title={"O nome deve ter no mínimo 3 caracteres"}
+                                pattern={"^.{10,}"}
+                                title={"O nome no cartão deve ter no mínimo 10 caracteres"}
                                 required
                             />
 
@@ -191,11 +193,13 @@ const SignUpForm = () => {
                             />
                         </CardContainer>
                     </ItemsContainer>
+                    <Row />
                 </PaymentContainer>
+                
 
                 <MatriculationContainer>
                     <p>Seu cartão será debitado em R$49,00</p>
-                    <button  type={"submit"}>REALIZAR MATRÍCULA</button>
+                    <button type={"submit"}>REALIZAR MATRÍCULA</button>
                     <p>Informações seguras e criptografadas</p>
                 </MatriculationContainer>
             </Form>

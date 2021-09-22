@@ -7,10 +7,12 @@ export const FooterContainer = styled.footer`
    height: 12vh;
    background-color: #1188EE;
    align-items: center;
-   margin-top: 10px;
+   position: absolute;
+   margin-top: 10%;
 
    p {
        color: white;
        padding: 20px;
+       font-weight: bold;
    }
 `
