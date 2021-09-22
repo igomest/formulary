@@ -1,12 +1,9 @@
 ## Caracteristicas
 
-    Duck Pattern
-    Arquitetura Flux
     Styled Component
-    Dumb and Smart Components
-    Design System
+    Router-dom
 
-    Este projeto tem como finalidade mostrar todos os heróis da marvel e seus detalhes individuais.
+    Este projeto tem como finalidade a implementação de um site com validação de formulário e uma página contendo a lista de clientes.
 
 ### Configurando ambiente
 Primeira etapa
@@ -31,30 +28,12 @@ $ cd react-native-marvel
     Instalando dependências do projeto e executando o projeto.
 
 $ yarn install
-$ expo start
+$ yarn start
 
 ou
 
 $ npm install
-$ expo start
-
-### Quarta etapa
-
-Basta pegar o seu celular e ler o QRCode exibido para rodar o projeto. Obs.: Talvez seja necessário instalar o aplicativo do Expo caso não o tenha no celular.
-Plugins
-
-### Lista dos principais plugins utilizadas no projeto.
-
-    redux
-    react-redux
-    react-thunk
-    react-promise
-    redux-mock-store
-    enzyme
-    enzyme-adapter-react-16
-    styled-component
-    md5
-    expo
+$ npm start
 
  
  ### Imagens 
