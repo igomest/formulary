@@ -1,6 +1,4 @@
 ## Resposta do Teste
-
- ### Resposta do Teste
  
  - O teste proposto foi concluído. Implementei um site com validação de formulário e coloquei dados mockados na página de lista. 
 
