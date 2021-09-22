@@ -9,10 +9,7 @@
 Primeira etapa
 
     NodeJS guia de instalação
-    Homebrew para mac
-    Chocolatey para Windows
     ReactJs
-    Yarn -Expo
 
 ### Segunda etapa
 
@@ -20,17 +17,13 @@ Primeira etapa
 
     Baixando o projeto
 
-$ git clone https://github.com/EddosPrazeres/react-native-marvel.git
-$ cd react-native-marvel
+$ git clone git@github.com:ivangomestr/resposta-do-teste.git
+$ cd resposta-do-teste
 
 ### Terceira etapa
 
     Instalando dependências do projeto e executando o projeto.
-
-$ yarn install
-$ yarn start
-
-ou
+    
 
 $ npm install
 $ npm start
