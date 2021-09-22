@@ -1,5 +1,7 @@
 ## Caracteristicas
-
+    
+    React
+    Javascript
     Styled Component
     Router-dom
 
@@ -24,8 +26,8 @@ Primeira etapa
     Instalando dependências do projeto e executando o projeto.
     
 
-$ npm install
-$ npm start
+- $ npm install
+- $ npm start
 
  
  ### Imagens 
