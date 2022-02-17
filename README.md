@@ -18,7 +18,7 @@ Primeira etapa
 
     Baixando o projeto
 
-- $ git clone git@github.com:ivangomestr/resposta-do-teste.git
+- $ git clone git@github.com:ivangomestr/formulary.git
 - $ cd resposta-do-teste
 
 ### Terceira etapa
